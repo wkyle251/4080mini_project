@@ -94,4 +94,4 @@ def update_results():
 if __name__ == "__main__":
     thread = Thread(target=update_results, daemon=True)
     thread.start()
-    app.run(host="0.0.0.0", port=5001)
+    app.run(host="0.0.0.0", port=80)
