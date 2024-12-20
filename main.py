@@ -26,7 +26,7 @@ def print_results_thread(redis_client):
             print(f"{idx}. {prediction['label']} ({prediction['score']:.4f})")
 
 if __name__ == "__main__":
-    redis_client = redis.StrictRedis(host="localhost", port=8888, decode_responses=True)
+    redis_client = redis.StrictRedis(host="localhost", port=6379, decode_responses=True)
     threading.Thread(target=user_input_thread, args=(redis_client,), daemon=True).start()
     threading.Thread(target=print_results_thread, args=(redis_client,), daemon=True).start()
 

@@ -75,7 +75,7 @@ def prediction_service(redis_client, model, class_labels):
 
 if __name__ == "__main__":
     redis_client = redis.StrictRedis(
-        host="localhost", port=8888, decode_responses=True)
+        host="localhost", port=6379, decode_responses=True)
 
     model = models.inception_v3(weights=models.Inception_V3_Weights.DEFAULT)
 

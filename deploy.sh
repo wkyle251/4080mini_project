@@ -91,7 +91,7 @@ nohup python3 "$APP_DIR/predict.py" > "$PREDICT_LOG" 2>&1 &
 # Display final status
 echo "Deployment complete!"
 echo "Gunicorn is running on http://localhost/"
-echo "Redis is running on port 8888."
+echo "Redis is running on port 6379."
 echo "Nginx is proxying requests to Gunicorn."
 
 # Display log instructions

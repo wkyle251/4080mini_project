@@ -31,5 +31,5 @@ def download_image(redis_client):
 
 if __name__ == "__main__":
     redis_client = redis.StrictRedis(
-        host="localhost", port=8888, decode_responses=True)
+        host="localhost", port=6379, decode_responses=True)
     download_image(redis_client)
