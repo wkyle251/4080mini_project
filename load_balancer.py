@@ -4,7 +4,7 @@ import time
 from multiprocessing import Process
 
 def monitor_queue():
-    redis_client = redis.StrictRedis(host="localhost", port=6379, decode_responses=True)
+    redis_client = redis.StrictRedis(host="localhost", port=8888, decode_responses=True)
     max_processes = 10  # Maximum number of instances to spawn
     active_processes = []
 
