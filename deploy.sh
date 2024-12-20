@@ -64,7 +64,7 @@ NGINX_CONF="/usr/local/etc/nginx/servers/image_classifier.conf"
 sudo mkdir -p /usr/local/etc/nginx/servers/
 sudo tee "$NGINX_CONF" > /dev/null <<EOF
 server {
-    listen 80;
+    listen 5001;
     server_name localhost;
 
     location / {
